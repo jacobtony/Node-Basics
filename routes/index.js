@@ -8,6 +8,7 @@ var assert = require('assert');
 var url = "mongodb://localhost:27017/test"
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  console.log("im in index.js");
   res.sendFile(path.join(__dirname,'index.html'));
 });
 var resultArray = [];
